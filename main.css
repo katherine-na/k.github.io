@@ -146,7 +146,7 @@ body {
 
 .skills-subtitle h2 {
   font-size: 35px;
-  color: #24315e;
+  color: #0d1d56;
   text-transform: uppercase;
   border-bottom: 4px solid #fbdd03;
   width: 190px;
@@ -183,44 +183,49 @@ body {
 
 /* projects section  */
 
-#my-projects {
+.projects-section {
   display: flex;
-  flex-direction: column;
-  margin: 30px 120px;
+  justify-content: center;
 }
 
 .projects-subtitle h2 {
-  margin: 20px 0px;
+  margin: 20px 120px;
+  color: #0d1d56;
   font-size: 35px;
   text-transform: uppercase;
   border-bottom: 4px solid #fbdd03;
   width: 260px;
 }
 
+#my-projects {
+  display: flex;
+  margin: 30px 120px;
+}
+
 .project {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .project-thumbnail img {
-  width: 400px;
-  height: 200px;
-}
-
-.project-description {
   width: 500px;
+  height: 500px;
 }
 
 /* my experience  */
 
 #experience {
   margin: 30px 120px;
+  padding: 50px;
 }
 
-.experience-subtitle {
+.experience-subtitle h2 {
+  color: #0d1d56;
   margin: 50px 0px;
-  font-size: 25px;
+  font-size: 35px;
   text-transform: uppercase;
+  border-bottom: 4px solid #fbdd03;
+  width: 300px;
 }
 
 .experience-item {
@@ -251,4 +256,10 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 50px;
+  background-color: #cacaccc2;
+}
+
+.fa-envelope-circle-check {
+  color: rgb(118, 104, 246);
+  font-size: 40px;
 }
