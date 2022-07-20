@@ -1,28 +1,66 @@
 body {
-  margin: 0 100px;
   font-family: sans-serif;
+  margin: 0;
 }
 
 .navigation-bar {
+  margin: 30px 120px;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 0px;
 }
 
 .avatar {
   width: 100px;
   height: 100px;
-  margin: 10px 0;
+  margin: 10px 0px;
   border-radius: 50%;
 }
 
 .navigation-bar-links ul {
   display: flex;
+  align-items: center;
   list-style: none;
 }
 
-.navigation-bar-links ul li {
+.navigation-bar-links ul li a {
+  text-decoration: none;
+  color: #505a7e;
+  font-weight: bold;
+  text-transform: uppercase;
   margin: 10px 20px;
+  transition: all 0.2s;
+}
+
+.navigation-bar-links ul li a:hover {
+  text-decoration: underline;
+  color: #121d45;
+}
+
+.navigation-bar-links .contact-buttom {
+  text-decoration: none;
+  background-color: #505a7e;
+  padding: 10px 15px;
+  border-radius: 80px;
+  color: white;
+}
+
+.contact-buttom {
+  text-decoration: none !important;
+  color: white !important;
+  transition: all 0.5s;
+}
+
+.contact-buttom:hover {
+  background-color: #121d45;
+}
+
+.fa-envelope {
+  margin-right: 10px;
+}
+
+.fa-brands {
+  font-size: 30px;
 }
 
 /* my intro page  */
@@ -30,10 +68,11 @@ body {
 #biography {
   display: flex;
   justify-content: space-between;
+  margin: 30px 120px;
 }
 
 .biography-intro-text {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,17 +80,20 @@ body {
 
 .biography-intro-text p:first-child {
   font-size: 30px;
-  color: black;
+  color: #505a7e;
 }
 
 .biography-intro-text h1 {
-  font-size: 60px;
+  font-size: 80px;
   margin: 0;
+  color: #24315e;
 }
 
 .biography-intro-text p {
   font-size: 20px;
   margin: 10px 0px;
+  color: #505a7e;
+  line-height: 1.444;
 }
 
 .biography-banner {
@@ -59,8 +101,8 @@ body {
 }
 
 .biography-banner img {
-  width: 550px;
-  height: 550px;
+  width: 600px;
+  height: 600px;
 }
 
 /* skills section  */
@@ -68,13 +110,28 @@ body {
 #skills {
   display: flex;
   flex-direction: column;
+  margin: 10% 0%;
+  padding: 120px 20px;
+  background-color: rgb(171, 248, 160);
 }
 
 .skills-subtitle {
-  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-subtitle h2 {
+  font-size: 35px;
+  color: #24315e;
   text-align: center;
-  margin: 20px 0;
   text-transform: uppercase;
+}
+
+.skills-subtitle p {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 120px 70px 120px;
 }
 
 .skills-item img {
@@ -99,11 +156,12 @@ body {
 #my-projects {
   display: flex;
   flex-direction: column;
+  margin: 30px 120px;
 }
 
-.projects-subtitle {
+.projects-subtitle h2 {
   margin: 20px 0px;
-  font-size: 25px;
+  font-size: 35px;
   text-transform: uppercase;
 }
 
@@ -122,6 +180,10 @@ body {
 }
 
 /* my experience  */
+
+#experience {
+  margin: 30px 120px;
+}
 
 .experience-subtitle {
   margin: 50px 0px;
