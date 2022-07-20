@@ -59,8 +59,15 @@ body {
   margin-right: 10px;
 }
 
+.fa-github {
+  color: rgb(245 124 255);
+}
+
+.fa-linkedin {
+  color: rgb(49 181 182);
+}
 .fa-brands {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 /* my intro page  */
@@ -81,12 +88,16 @@ body {
 .biography-intro-text p:first-child {
   font-size: 30px;
   color: #505a7e;
+  border-color: #fbdd03;
+  border-bottom-style: solid;
+  width: 230px;
+  border-bottom-width: 4px;
 }
 
 .biography-intro-text h1 {
   font-size: 80px;
   margin: 0;
-  color: #24315e;
+  color: #0d1d56;
 }
 
 .biography-intro-text p {
@@ -94,6 +105,18 @@ body {
   margin: 10px 0px;
   color: #505a7e;
   line-height: 1.444;
+}
+
+.dowloand-cv {
+  padding: 10px;
+  width: 180px;
+  border-radius: 30px;
+  background: aquamarine;
+  cursor: pointer;
+}
+
+.dowloand-cv:hover {
+  background: rgb(78, 240, 189);
 }
 
 .biography-banner {
