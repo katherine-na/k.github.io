@@ -132,14 +132,14 @@ body {
 
 #skills {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   margin: 10% 0%;
-  padding: 120px 20px;
-  background-color: rgb(171, 248, 160);
 }
 
 .skills-subtitle {
   display: flex;
+  width: 50%;
+  margin: 0px 80px;
   flex-direction: column;
   justify-content: center;
 }
@@ -147,31 +147,38 @@ body {
 .skills-subtitle h2 {
   font-size: 35px;
   color: #24315e;
-  text-align: center;
   text-transform: uppercase;
+  border-bottom: 4px solid #fbdd03;
+  width: 190px;
 }
 
 .skills-subtitle p {
   font-size: 20px;
-  text-align: center;
-  margin: 20px 120px 70px 120px;
+  line-height: 1.444;
 }
 
-.skills-item img {
-  width: 60px;
-  height: 60px;
+.item {
+  margin: 40px;
+}
+
+.item img {
+  width: 70px;
+  height: 70px;
   margin: 5px 25px;
   border-radius: 60%;
 }
 
-.skills-item p {
+.item p {
   margin: 0;
   text-align: center;
 }
 
-.skills-item-and-text {
+.skills-items {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  padding: 100px;
+  background-color: rgb(245 124 255 / 26%);
 }
 
 /* projects section  */
@@ -186,6 +193,8 @@ body {
   margin: 20px 0px;
   font-size: 35px;
   text-transform: uppercase;
+  border-bottom: 4px solid #fbdd03;
+  width: 260px;
 }
 
 .project {
