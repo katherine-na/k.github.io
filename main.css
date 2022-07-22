@@ -78,7 +78,7 @@ body {
   justify-content: center;
 }
 
-.biography-intro-text p:first-child {
+.biography-intro-text span {
   font-size: 30px;
   color: #505a7e;
   border-color: #fbdd03;
@@ -320,4 +320,43 @@ footer {
 .fa-comment-dots {
   color: #717070;
   font-size: 30px;
+}
+
+@media all and (min-width: 300px) and (max-width: 1440px) {
+  body {
+    margin: 10px;
+  }
+
+  .navigation-bar {
+    justify-content: flex-start;
+  }
+
+  .navigation-bar .contact-buttom {
+    display: none;
+  }
+
+  #biography {
+    flex-direction: column-reverse;
+    margin: 100px;
+  }
+
+  .biography-banner img {
+    width: 500px;
+    margin-bottom: 80px;
+  }
+
+  .biography-intro-text {
+  }
+
+  .biography-intro-text p {
+    display: none;
+  }
+
+  #skills {
+    flex-direction: column;
+  }
+
+  .skills-items {
+    justify-content: center;
+  }
 }
