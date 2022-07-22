@@ -68,7 +68,7 @@ body {
 #biography {
   display: flex;
   justify-content: space-between;
-  margin: 120px 120px;
+  margin: 220px 120px;
 }
 
 .biography-intro-text {
@@ -121,7 +121,6 @@ body {
 #skills {
   display: flex;
   flex-direction: row-reverse;
-  margin: 10% 0%;
 }
 
 .skills-subtitle {
@@ -176,7 +175,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 30px 120px;
+  margin: 200px 120px;
 }
 
 .projects-wrapper {
@@ -223,29 +222,29 @@ body {
 .project-buttons a {
   text-decoration: none;
   color: white;
-  background-color: rgb(148, 101, 209);
+  background-color: rgb(183, 136, 245);
   padding: 10px;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 20px;
 }
 
 .project-buttons a:hover {
-  background-color: rgb(118, 104, 246);
+  background-color: rgb(146, 135, 250);
 }
 
 .project-buttons a:first-child {
-  background-color: aquamarine;
+  background-color: rgb(153, 236, 240);
   color: black;
 }
 
 .project-buttons a:first-child:hover {
-  background-color: aqua;
+  background-color: rgb(133, 245, 245);
 }
 
 /* my experience  */
 
 #experience {
-  margin: 30px 120px;
+  margin: 200px 120px;
 }
 
 .experience-subtitle h2 {
@@ -296,12 +295,29 @@ body {
 footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 50px;
+  font-size: 20px;
   background-color: #e0e0e284;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
 }
 
 .fa-envelope-circle-check {
   color: rgb(118, 104, 246);
   font-size: 40px;
+}
+
+.fa-earth-americas {
+  color: #54cbfa;
+  font-size: 30px;
+}
+
+.fa-comment-dots {
+  color: #717070;
+  font-size: 30px;
 }
