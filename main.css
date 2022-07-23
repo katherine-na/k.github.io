@@ -317,6 +317,10 @@ footer {
   text-align: center;
 }
 
+.footer-contact .fa-linkedin {
+  margin: 0 30px;
+}
+
 .fa-envelope-circle-check {
   color: rgb(118, 104, 246);
   font-size: 40px;
@@ -402,6 +406,7 @@ footer {
 
   .skills-items {
     width: 100%;
+    padding: 0;
   }
 
   .skills-items .item {
@@ -411,5 +416,35 @@ footer {
 
   .item img {
     margin: 0;
+  }
+
+  .projects-wrapper {
+    align-items: center;
+  }
+
+  .project {
+    width: 70%;
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  .project-thumbnail img {
+    width: 100%;
+  }
+
+  #experience {
+    margin: 100px 20px;
+  }
+
+  .experience-item {
+    width: 100%;
+  }
+
+  .experience-subtitle h2 {
+    margin: 30px auto;
+  }
+
+  .footer-contact {
+    flex-wrap: wrap;
   }
 }
