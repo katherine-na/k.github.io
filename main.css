@@ -21,6 +21,7 @@ body {
   display: flex;
   align-items: center;
   list-style: none;
+  padding: 0;
 }
 
 .navigation-bar-links ul li a {
@@ -104,6 +105,8 @@ body {
 }
 
 .dowloand-cv {
+  text-decoration: none;
+  text-align: center;
   padding: 10px;
   width: 180px;
   border-radius: 30px;
@@ -116,7 +119,7 @@ body {
 }
 
 .biography-banner {
-  width: 60%;
+  width: 40%;
 }
 
 .biography-banner img {
@@ -344,8 +347,35 @@ footer {
  */
 
 @media all and (max-width: 1100px) {
+  * p,
+  span,
+  h3 {
+    font-size: 30px;
+  }
+
+  * .fa-solid,
+  .fa-brands {
+    font-size: 40px;
+  }
+
+  body a {
+    font-size: 25px;
+  }
+
   .navigation-bar .navigation-bar-links ul {
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navigation-bar {
+    margin: 20px;
+    justify-content: center;
+  }
+
+  .navigation-bar ul li a {
+    font-size: 25px;
+    margin: 20px;
+    display: inline-block;
   }
 
   #biography {
@@ -372,6 +402,10 @@ footer {
     margin: 20px 0;
   }
 
+  .biography-intro-text p {
+    font-size: 30px;
+  }
+
   .biography-intro-text span,
   .biography-intro-text .dowloand-cv {
     margin: 0 auto;
@@ -379,6 +413,9 @@ footer {
 
   .biography-intro-text .dowloand-cv {
     margin-top: 20px;
+    font-size: 25px;
+    padding: 18px;
+    color: black;
   }
 
   #skills {
@@ -401,6 +438,11 @@ footer {
     width: 100%;
   }
 
+  .project-buttons a {
+    padding: 18px;
+    border-radius: 30px;
+  }
+
   .skills-subtitle {
     width: 100%;
     margin: 0;
@@ -412,18 +454,26 @@ footer {
     margin: 0 auto;
   }
 
+  .skills-subtitle p {
+    font-size: 30px;
+  }
+
   .skills-items {
     width: 100%;
     padding: 0;
   }
 
   .skills-items .item {
-    width: 90px;
+    width: 155px;
     text-align: center;
   }
 
   .item img {
     margin: 0;
+  }
+
+  .item p {
+    font-size: 30px;
   }
 
   .projects-wrapper {
