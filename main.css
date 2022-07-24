@@ -1,6 +1,6 @@
 html,
 body {
-  min-height: 100%;
+  /* min-height: 100%; */
   min-width: fit-content;
   /* overflow-x: hidden; */
   font-family: sans-serif;
@@ -357,20 +357,28 @@ footer {
 
   .biography-banner {
     width: 100%;
+    margin-top: 50px;
   }
 
   .biography-banner img {
     width: 500px;
-    margin-bottom: 80px;
   }
 
   .biography-intro-text {
     width: 100%;
   }
 
+  .biography-intro-text h1 {
+    margin: 20px 0;
+  }
+
   .biography-intro-text span,
   .biography-intro-text .dowloand-cv {
     margin: 0 auto;
+  }
+
+  .biography-intro-text .dowloand-cv {
+    margin-top: 20px;
   }
 
   #skills {
