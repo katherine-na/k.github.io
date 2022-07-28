@@ -424,6 +424,38 @@ footer {
   .skills-subtitle h2 {
     justify-content: center;
   }
+  /* .skills-subtitle {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+  } */
+
+  /* .skills-subtitle h2 {
+    margin: 0 auto;
+  } */
+
+  /* .skills-subtitle p {
+    font-size: 30px;
+  } */
+
+  /* .skills-items {
+    width: 100%;
+    padding: 0;
+  } */
+
+  /* .skills-items .item {
+    width: 155px;
+    text-align: center;
+  } */
+
+  /* .item img {
+    margin: 0;
+  }
+
+  .item p {
+    font-size: 30px;
+  } */
 
   #my-projects {
     margin: 100px 0px;
@@ -441,39 +473,6 @@ footer {
   .project-buttons a {
     padding: 18px;
     border-radius: 30px;
-  }
-
-  .skills-subtitle {
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .skills-subtitle h2 {
-    margin: 0 auto;
-  }
-
-  .skills-subtitle p {
-    font-size: 30px;
-  }
-
-  .skills-items {
-    width: 100%;
-    padding: 0;
-  }
-
-  .skills-items .item {
-    width: 155px;
-    text-align: center;
-  }
-
-  .item img {
-    margin: 0;
-  }
-
-  .item p {
-    font-size: 30px;
   }
 
   .projects-wrapper {
