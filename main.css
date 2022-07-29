@@ -33,30 +33,27 @@ body {
 .navigation-bar ul li:nth-child(4) {
   text-decoration: none;
 }
+.navigation-bar ul li .fa-github {
+  font-size: 40px;
+  color: #8820b5;
+}
+.navigation-bar ul li .fa-linkedin {
+  font-size: 40px;
+  color: rgb(49, 181, 182);
+}
 
 .contact-buttom {
-  background-color: #505a7e;
+  background-color: #7794ff;
   padding: 10px 15px;
   border-radius: 80px;
   color: white !important;
   transition: all 0.5s;
 }
 .contact-buttom:hover {
-  background-color: #121d45;
+  background-color: #93aafc;
 }
-
-.fa-envelope {
+.contact-buttom .fa-envelope {
   margin-right: 10px;
-}
-
-.fa-github {
-  font-size: 40px;
-  color: rgb(245, 124, 255);
-}
-
-.fa-linkedin {
-  font-size: 40px;
-  color: rgb(49, 181, 182);
 }
 
 #biography {
@@ -92,14 +89,15 @@ body {
 #biography .dowloand-cv {
   text-decoration: none;
   text-align: center;
+  color: white;
   padding: 10px;
   width: 180px;
   border-radius: 30px;
-  background: aquamarine;
+  background: #7794ff;
   cursor: pointer;
 }
 #biography .dowloand-cv:hover {
-  background: rgb(78, 240, 189);
+  background: #93aafc;
 }
 #biography .biography-banner {
   width: 40%;
@@ -132,6 +130,7 @@ body {
 #skills .skills-subtitle p {
   font-size: 20px;
   line-height: 1.444;
+  color: #505a7e;
 }
 #skills .skills-items {
   width: 50%;
@@ -154,6 +153,7 @@ body {
   margin: 0;
   font-size: 20px;
   text-align: center;
+  color: #505a7e;
 }
 
 #my-projects {
@@ -192,6 +192,12 @@ body {
   font-size: 20px;
   line-height: 1.444;
 }
+#my-projects .projects-wrapper .project-description h3 {
+  color: #0d1d56;
+}
+#my-projects .projects-wrapper .project-description p {
+  color: #505a7e;
+}
 #my-projects .project-buttons {
   display: flex;
   justify-content: space-evenly;
@@ -209,7 +215,7 @@ body {
 }
 #my-projects .project-buttons a:first-child {
   background-color: rgb(153, 236, 240);
-  color: black;
+  color: #505a7e;
 }
 #my-projects .project-buttons a:first-child:first-child:hover {
   background-color: rgb(112, 249, 249);
@@ -238,19 +244,28 @@ body {
   margin-left: 30px;
   font-size: 20px;
 }
+#experience .experience-company-info .company-details .company-location {
+  margin-right: 20px;
+}
+#experience .experience-company-info .company-details .company-name a {
+  color: #505a7e;
+  text-decoration: none;
+}
 #experience .experience-company-info h3 {
   margin: 0px 0px 20px 0px;
+  color: #0d1d56;
+}
+#experience .experience-company-info span {
+  color: #505a7e;
+}
+#experience .experience-company-info a {
+  color: #505a7e;
+}
+#experience .experience-company-info p {
+  color: #505a7e;
 }
 #experience .experience-company-info .fa-solid {
   color: #8820b5;
-}
-
-.company-details .company-location {
-  margin-right: 20px;
-}
-.company-details .company-name a {
-  color: black;
-  text-decoration: none;
 }
 
 footer {
@@ -371,9 +386,18 @@ h3 {
   }
   #my-projects .projects-wrapper .project {
     width: 100%;
+    margin: 50px 0px;
   }
   #my-projects .projects-wrapper .project .project-thumbnail img {
     width: 100%;
+  }
+  #my-projects .projects-wrapper .project .project-description {
+    text-align: center;
+  }
+  #my-projects .projects-wrapper .project .project-buttons a {
+    font-size: 25px;
+    padding: 25px 35px;
+    border-radius: 40px;
   }
   #experience {
     margin: 100px 20px;
