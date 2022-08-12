@@ -99,6 +99,9 @@ body {
 #biography .dowloand-cv:hover {
   background: #93aafc;
 }
+#biography .biography-banner {
+  width: 40%;
+}
 #biography .biography-banner img {
   width: 600px;
 }
@@ -135,7 +138,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   padding: 50px;
-  background-image: linear-gradient(260deg, #f8def8 0%, #f49cfc 100%);
+  background-image: linear-gradient(260deg, #cbe7f6 0%, #7ae7fa 100%);
 }
 #skills .skills-items .item {
   margin: 40px;
@@ -156,12 +159,11 @@ body {
 #my-projects {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   margin: 200px 120px;
 }
 #my-projects .projects-subtitle {
   display: flex;
-  justify-content: center;
 }
 #my-projects .projects-subtitle h2 {
   font-size: 30px;
@@ -174,36 +176,46 @@ body {
 }
 #my-projects .projects-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 #my-projects .projects-wrapper .project {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   flex-direction: column;
-  width: 33.33%;
+  align-items: center;
+  width: 25.33%;
+  padding: 10px;
   margin-right: 20px;
 }
+#my-projects .projects-wrapper .project:hover {
+  transition: 1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
 #my-projects .projects-wrapper .project .project-thumbnail img {
-  height: 500px;
+  width: 100%;
 }
 #my-projects .projects-wrapper .project-description {
   font-size: 20px;
   line-height: 1.444;
+  text-align: center;
 }
 #my-projects .projects-wrapper .project-description h3 {
+  text-align: center;
   color: #0d1d56;
 }
 #my-projects .projects-wrapper .project-description p {
+  text-align: center;
   color: #505a7e;
 }
 #my-projects .project-buttons {
   display: flex;
-  justify-content: space-evenly;
 }
 #my-projects .project-buttons a {
   text-decoration: none;
   color: white;
   background-color: rgb(183, 136, 245);
   padding: 10px;
+  margin: 10px;
   border: 1px solid black;
   border-radius: 20px;
 }
@@ -292,6 +304,14 @@ footer .footer-contact .fa-earth-americas {
 footer .footer-contact .fa-comment-dots {
   font-size: 40px;
   color: #717070;
+}
+footer .footer-contact .fa-github {
+  font-size: 40px;
+  color: #8820b5;
+}
+footer .footer-contact .fa-linkedin {
+  font-size: 40px;
+  color: rgb(49, 181, 182);
 }
 
 /* -------> Media queries <-------- */

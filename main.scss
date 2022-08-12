@@ -128,7 +128,7 @@ body {
     }
   }
   .biography-banner {
-    // width: 40%;
+    width: 40%;
     img {
       width: 600px;
     }
@@ -160,7 +160,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding: 50px;
-    background-image: linear-gradient(260deg, #f8def8 0%, #f49cfc 100%);
+    background-image: linear-gradient(260deg, #cbe7f6 0%, #7ae7fa 100%);
     .item {
       margin: 40px;
       img {
@@ -184,48 +184,60 @@ body {
 #my-projects {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   margin: 200px 120px;
   .projects-subtitle {
     display: flex;
-    justify-content: center;
     h2 {
       @include subtitleSection;
     }
   }
   .projects-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+
     .project {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
       display: flex;
       flex-direction: column;
-      width: 33.33%;
+      align-items: center;
+      width: 25.33%;
+      padding: 10px;
       margin-right: 20px;
+      &:hover {
+        transition: 1s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5),
+          0 6px 20px 0 rgba(0, 0, 0, 0.3);
+      }
       .project-thumbnail {
         img {
-          height: 500px;
+          width: 100%;
         }
       }
     }
     .project-description {
       font-size: 20px;
       line-height: 1.444;
+      text-align: center;
       h3 {
+        text-align: center;
         color: $capitalColor;
       }
       p {
+        text-align: center;
         color: $defaultColor;
       }
     }
   }
   .project-buttons {
     display: flex;
-    justify-content: space-evenly;
     a {
       text-decoration: none;
       color: $witheColor;
       background-color: rgb(183, 136, 245);
       padding: 10px;
+      margin: 10px;
       border: 1px solid $blackColor;
       border-radius: 20px;
       &:hover {
@@ -316,6 +328,13 @@ footer {
     }
     .fa-comment-dots {
       @include faBrandsSize($size, #717070);
+    }
+    .fa-github {
+      @include faBrandsSize($size, $purpleColor);
+    }
+
+    .fa-linkedin {
+      @include faBrandsSize($size, $greenColor);
     }
   }
 }
