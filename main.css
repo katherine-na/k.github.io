@@ -213,14 +213,14 @@ body {
 #my-projects .project-buttons a {
   text-decoration: none;
   color: white;
-  background-color: rgb(183, 136, 245);
+  background-color: rgb(146, 135, 250);
   padding: 10px;
   margin: 10px;
   border: 1px solid black;
   border-radius: 20px;
 }
 #my-projects .project-buttons a:hover {
-  background-color: rgb(146, 135, 250);
+  background-color: rgb(183, 136, 245);
 }
 #my-projects .project-buttons a:first-child {
   background-color: rgb(153, 236, 240);
@@ -295,15 +295,12 @@ footer .footer-contact .fa-linkedin {
 }
 footer .footer-contact .fa-envelope-circle-check {
   font-size: 40px;
-  color: rgb(118, 104, 246);
+  color: rgb(79, 238, 246);
 }
-footer .footer-contact .fa-earth-americas {
-  font-size: 40px;
-  color: #54cbfa;
-}
+footer .footer-contact .fa-earth-americas,
 footer .footer-contact .fa-comment-dots {
   font-size: 40px;
-  color: #717070;
+  color: #88a2ff;
 }
 footer .footer-contact .fa-github {
   font-size: 40px;

@@ -235,13 +235,14 @@ body {
     a {
       text-decoration: none;
       color: $witheColor;
-      background-color: rgb(183, 136, 245);
+      background-color: rgb(146, 135, 250);
+
       padding: 10px;
       margin: 10px;
       border: 1px solid $blackColor;
       border-radius: 20px;
       &:hover {
-        background-color: rgb(146, 135, 250);
+        background-color: rgb(183, 136, 245);
       }
       &:first-child {
         background-color: rgb(153, 236, 240);
@@ -321,13 +322,11 @@ footer {
       margin: 0 30px;
     }
     .fa-envelope-circle-check {
-      @include faBrandsSize($size, rgb(118, 104, 246));
+      @include faBrandsSize($size, rgb(79, 238, 246));
     }
-    .fa-earth-americas {
-      @include faBrandsSize($size, #54cbfa);
-    }
+    .fa-earth-americas,
     .fa-comment-dots {
-      @include faBrandsSize($size, #717070);
+      @include faBrandsSize($size, #88a2ff);
     }
     .fa-github {
       @include faBrandsSize($size, $purpleColor);
