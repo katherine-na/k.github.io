@@ -26,9 +26,6 @@ $greenColor: rgb(49 181 182);
 
 body {
   font-family: sans-serif;
-  min-height: 100%;
-  min-width: fit-content;
-  overflow-x: hidden;
 }
 
 .navigation-bar {
@@ -51,6 +48,19 @@ body {
         margin: 10px 20px;
         transition: all 0.2s;
       }
+      .contact-buttom {
+        background-color: $buttonColor;
+        padding: 10px 15px;
+        border-radius: 80px;
+        color: $witheColor !important;
+        transition: all 0.5s;
+        &:hover {
+          background-color: $buttonHover;
+        }
+        .fa-envelope {
+          margin-right: 10px;
+        }
+      }
       &:hover {
         text-decoration: underline;
       }
@@ -65,20 +75,6 @@ body {
         @include faBrandsSize($size, $greenColor);
       }
     }
-  }
-}
-
-.contact-buttom {
-  background-color: $buttonColor;
-  padding: 10px 15px;
-  border-radius: 80px;
-  color: $witheColor !important;
-  transition: all 0.5s;
-  &:hover {
-    background-color: $buttonHover;
-  }
-  .fa-envelope {
-    margin-right: 10px;
   }
 }
 
@@ -133,6 +129,8 @@ body {
     }
   }
 }
+
+// skills section
 
 #skills {
   width: 100%;
@@ -440,17 +438,13 @@ footer {
  */
 
 @media all and (max-width: 1100px) {
-  * p,
-  span,
-  h3 {
-    font-size: 30px;
+  body {
+    margin: 0;
   }
 
   .navigation-bar {
-    margin: 20px;
     justify-content: center;
     .navigation-bar-links {
-      margin: 20px;
       justify-content: center;
       ul {
         flex-wrap: wrap;
@@ -458,8 +452,13 @@ footer {
         li {
           a {
             font-size: 25px;
-            margin: 20px;
+            margin: 15px;
             display: inline-block;
+          }
+          .contact-buttom {
+            padding: 10px;
+            font-size: 19px;
+            margin: 0px;
           }
         }
       }
@@ -469,15 +468,16 @@ footer {
   #biography {
     flex-direction: column;
     align-content: center;
-    margin: 100px;
+    justify-content: center;
     text-align: center;
+    margin: 0;
     .biography-intro-text {
       width: 100%;
       span {
         margin: 0 auto;
       }
       h1 {
-        margin: 20px 0;
+        font-size: 50px;
       }
       .dowloand-cv {
         margin: 0 auto;
@@ -491,7 +491,7 @@ footer {
       width: 100%;
       margin-top: 50px;
       img {
-        width: 500px;
+        width: 100%;
       }
     }
   }
@@ -502,17 +502,13 @@ footer {
       width: 100%;
       margin: 0;
       text-align: center;
-      padding: 10px;
-      h2 {
-        justify-content: center;
-      }
     }
     .skills-items {
       width: 100%;
       padding: 0;
-      .tem {
-        width: 155px;
-        text-align: center;
+      justify-content: space-around;
+      .item {
+        margin: 20px;
         img {
           margin: 0;
         }
@@ -521,13 +517,13 @@ footer {
   }
 
   #my-projects {
-    margin: 100px 0px;
     flex-direction: column;
+    margin: 0;
     .projects-wrapper {
       flex-direction: column;
       .project {
         width: 100%;
-        margin: 50px 0px;
+        margin: 0;
         .project-thumbnail {
           img {
             width: 100%;
@@ -538,8 +534,7 @@ footer {
         }
         .project-buttons {
           a {
-            font-size: 25px;
-            padding: 25px 35px;
+            font-size: 20px;
             border-radius: 40px;
           }
         }
@@ -548,7 +543,7 @@ footer {
   }
 
   #experience {
-    margin: 100px 20px;
+    margin: 0;
     .experience-subtitle {
       h2 {
         margin: 30px auto;
@@ -556,6 +551,24 @@ footer {
     }
     .experience-item {
       width: 100%;
+    }
+    .experience-company-logo {
+      img {
+        width: 50px;
+      }
+    }
+    .experience-company-info {
+      margin-left: 10px;
+    }
+  }
+}
+
+#certificate {
+  .certificate-wrap {
+    flex-direction: column;
+    .certificate-item {
+      margin: 0;
+      padding: 0;
     }
   }
 }
