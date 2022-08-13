@@ -333,6 +333,8 @@ body {
 }
 #certificate .certificate-wrap {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 #certificate .certificate-wrap .certificate-item {
   padding: 20px;
@@ -401,9 +403,6 @@ footer .footer-contact .fa-linkedin {
   tablets and large phones min with 768px
  */
 @media all and (max-width: 1100px) {
-  body {
-    margin: 0;
-  }
   .navigation-bar {
     justify-content: center;
   }
@@ -483,6 +482,7 @@ footer .footer-contact .fa-linkedin {
   #my-projects .projects-wrapper .project {
     width: 100%;
     margin: 0;
+    padding: 0;
   }
   #my-projects .projects-wrapper .project .project-thumbnail img {
     width: 100%;
@@ -509,15 +509,29 @@ footer .footer-contact .fa-linkedin {
   #experience .experience-company-info {
     margin-left: 10px;
   }
-}
-#certificate .certificate-wrap {
-  flex-direction: column;
-}
-#certificate .certificate-wrap .certificate-item {
-  margin: 0;
-  padding: 0;
-}
-
-.footer-contact {
-  flex-wrap: wrap;
+  #education .education-items {
+    margin: 0;
+  }
+  #education .education-items .education-coursera {
+    margin-bottom: 40px;
+  }
+  #certificate .certificate-wrap {
+    flex-direction: column;
+  }
+  #certificate .certificate-wrap .certificate-item {
+    margin-top: 20px;
+    padding: 0;
+  }
+  footer .footer-contact {
+    flex-wrap: wrap;
+  }
+  footer .footer-contact .copyright p {
+    font-size: 15px;
+  }
+  footer .footer-contact .location p {
+    font-size: 15px;
+  }
+  footer .footer-contact .email p {
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=main.css.map */

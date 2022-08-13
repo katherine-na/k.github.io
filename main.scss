@@ -366,6 +366,8 @@ body {
   }
   .certificate-wrap {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     .certificate-item {
       padding: 20px;
       margin-inline: 30px;
@@ -438,10 +440,6 @@ footer {
  */
 
 @media all and (max-width: 1100px) {
-  body {
-    margin: 0;
-  }
-
   .navigation-bar {
     justify-content: center;
     .navigation-bar-links {
@@ -524,6 +522,7 @@ footer {
       .project {
         width: 100%;
         margin: 0;
+        padding: 0;
         .project-thumbnail {
           img {
             width: 100%;
@@ -561,18 +560,45 @@ footer {
       margin-left: 10px;
     }
   }
-}
 
-#certificate {
-  .certificate-wrap {
-    flex-direction: column;
-    .certificate-item {
+  #education {
+    .education-items {
       margin: 0;
-      padding: 0;
+      .education-coursera {
+        margin-bottom: 40px;
+      }
     }
   }
-}
 
-.footer-contact {
-  flex-wrap: wrap;
+  #certificate {
+    .certificate-wrap {
+      flex-direction: column;
+
+      .certificate-item {
+        margin-top: 20px;
+        padding: 0;
+      }
+    }
+  }
+
+  footer {
+    .footer-contact {
+      flex-wrap: wrap;
+      .copyright {
+        p {
+          font-size: 15px;
+        }
+      }
+      .location {
+        p {
+          font-size: 15px;
+        }
+      }
+      .email {
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
 }
