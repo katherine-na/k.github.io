@@ -123,9 +123,9 @@ body {
   text-transform: uppercase;
   color: #0d1d56;
   border-color: #fbdd03;
+  width: 200px;
   border-bottom-style: solid;
-  width: 230px;
-  border-bottom-width: 4px;
+  border-bottom-width: 5px;
 }
 #skills .skills-subtitle p {
   font-size: 20px;
@@ -170,9 +170,9 @@ body {
   text-transform: uppercase;
   color: #0d1d56;
   border-color: #fbdd03;
+  width: 200px;
   border-bottom-style: solid;
-  width: 230px;
-  border-bottom-width: 4px;
+  border-bottom-width: 5px;
 }
 #my-projects .projects-wrapper {
   display: flex;
@@ -231,16 +231,17 @@ body {
 }
 
 #experience {
-  margin: 200px 120px;
+  margin: 120px;
+  margin-bottom: 0;
 }
 #experience .experience-subtitle h2 {
   font-size: 30px;
   text-transform: uppercase;
   color: #0d1d56;
   border-color: #fbdd03;
+  width: 200px;
   border-bottom-style: solid;
-  width: 230px;
-  border-bottom-width: 4px;
+  border-bottom-width: 5px;
 }
 #experience .experience-item {
   display: flex;
@@ -254,7 +255,7 @@ body {
   font-size: 20px;
 }
 #experience .experience-company-info h3 {
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 15px 0px;
   color: #0d1d56;
 }
 #experience .experience-company-info .company-details span {
@@ -270,8 +271,87 @@ body {
   color: #505a7e;
   text-decoration: none;
 }
+#experience .experience-company-info .company-details ul li {
+  color: #505a7e;
+}
 #experience .experience-company-info .company-details .fa-solid {
   color: rgb(49, 181, 182);
+}
+
+#education .education-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 120px;
+}
+#education .education-subtitle h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #0d1d56;
+  border-color: #fbdd03;
+  width: 200px;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  text-align: end;
+}
+#education .education-coursera,
+#education .education-colbach {
+  display: flex;
+}
+#education .education-coursera .education-info,
+#education .education-colbach .education-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 30px;
+}
+#education .education-coursera .education-info h3,
+#education .education-colbach .education-info h3 {
+  margin: 0 0 15px 0;
+  color: #0d1d56;
+  font-size: 25px;
+}
+#education .education-coursera .education-info span,
+#education .education-coursera .education-info p,
+#education .education-colbach .education-info span,
+#education .education-colbach .education-info p {
+  color: #505a7e;
+  font-size: 20px;
+}
+#education .education-img img {
+  width: 80px;
+}
+
+#certificate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+}
+#certificate .certificate-subtitle h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #0d1d56;
+  border-color: #fbdd03;
+  width: 200px;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+}
+#certificate .certificate-wrap {
+  display: flex;
+}
+#certificate .certificate-wrap .certificate-item {
+  padding: 20px;
+  margin-inline: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+#certificate .certificate-wrap .certificate-item .certificate-html img,
+#certificate .certificate-wrap .certificate-item .certificate-css img {
+  width: 300px;
+}
+#certificate .certificate-wrap .certificate-item .certificate-html h3,
+#certificate .certificate-wrap .certificate-item .certificate-css h3 {
+  text-align: center;
 }
 
 footer {

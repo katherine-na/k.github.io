@@ -21,8 +21,7 @@ $greenColor: rgb(49 181 182);
   color: $capitalColor;
   border-color: $decorColor;
   border-bottom-style: solid;
-  width: 230px;
-  border-bottom-width: 4px;
+  border-bottom-width: 5px;
 }
 
 body {
@@ -257,7 +256,8 @@ body {
 
 // experience
 #experience {
-  margin: 200px 120px;
+  margin: 120px;
+  margin-bottom: 0;
   .experience-subtitle {
     h2 {
       @include subtitleSection;
@@ -276,7 +276,7 @@ body {
     margin-left: 30px;
     font-size: 20px;
     h3 {
-      margin: 0px 0px 20px 0px;
+      margin: 0px 0px 15px 0px;
       color: $capitalColor;
     }
     .company-details {
@@ -296,8 +296,86 @@ body {
           text-decoration: none;
         }
       }
+      ul {
+        li {
+          color: $defaultColor;
+        }
+      }
       .fa-solid {
         color: $greenColor;
+      }
+    }
+  }
+}
+
+// education
+
+#education {
+  .education-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 120px;
+  }
+  .education-subtitle {
+    h2 {
+      @include subtitleSection;
+      text-align: end;
+    }
+  }
+  .education-coursera,
+  .education-colbach {
+    display: flex;
+    .education-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-right: 30px;
+      h3 {
+        margin: 0 0 15px 0;
+        color: $capitalColor;
+        font-size: 25px;
+      }
+      span,
+      p {
+        color: $defaultColor;
+        font-size: 20px;
+      }
+    }
+  }
+  .education-img {
+    img {
+      width: 80px;
+    }
+  }
+}
+
+// certifcations
+#certificate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+  .certificate-subtitle {
+    h2 {
+      @include subtitleSection;
+    }
+  }
+  .certificate-wrap {
+    display: flex;
+    .certificate-item {
+      padding: 20px;
+      margin-inline: 30px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.1);
+      .certificate-html,
+      .certificate-css {
+        img {
+          width: 300px;
+        }
+        h3 {
+          text-align: center;
+        }
       }
     }
   }
