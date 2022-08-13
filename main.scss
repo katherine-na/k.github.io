@@ -207,8 +207,8 @@ body {
       margin-right: 20px;
       &:hover {
         transition: 1s;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5),
-          0 6px 20px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3),
+          0 6px 20px 0 rgba(0, 0, 0, 0.2);
       }
       .project-thumbnail {
         img {
@@ -265,7 +265,7 @@ body {
   }
   .experience-item {
     display: flex;
-    width: 60%;
+    width: 50%;
   }
   .experience-company-logo {
     img {
@@ -275,7 +275,18 @@ body {
   .experience-company-info {
     margin-left: 30px;
     font-size: 20px;
+    h3 {
+      margin: 0px 0px 20px 0px;
+      color: $capitalColor;
+    }
     .company-details {
+      span {
+        color: $defaultColor;
+      }
+      p {
+        color: $defaultColor;
+      }
+
       .company-location {
         margin-right: 20px;
       }
@@ -285,22 +296,9 @@ body {
           text-decoration: none;
         }
       }
-    }
-    h3 {
-      margin: 0px 0px 20px 0px;
-      color: $capitalColor;
-    }
-    span {
-      color: $defaultColor;
-    }
-    a {
-      color: $defaultColor;
-    }
-    p {
-      color: $defaultColor;
-    }
-    .fa-solid {
-      color: $purpleColor;
+      .fa-solid {
+        color: $greenColor;
+      }
     }
   }
 }
