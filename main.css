@@ -1,10 +1,5 @@
 body {
   font-family: sans-serif;
-  min-height: 100%;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-  overflow-x: hidden;
 }
 
 .navigation-bar {
@@ -27,6 +22,19 @@ body {
   margin: 10px 20px;
   transition: all 0.2s;
 }
+.navigation-bar ul li .contact-buttom {
+  background-color: #7794ff;
+  padding: 10px 15px;
+  border-radius: 80px;
+  color: white !important;
+  transition: all 0.5s;
+}
+.navigation-bar ul li .contact-buttom:hover {
+  background-color: #93aafc;
+}
+.navigation-bar ul li .contact-buttom .fa-envelope {
+  margin-right: 10px;
+}
 .navigation-bar ul li:hover {
   text-decoration: underline;
 }
@@ -40,20 +48,6 @@ body {
 .navigation-bar ul li .fa-linkedin {
   font-size: 40px;
   color: rgb(49, 181, 182);
-}
-
-.contact-buttom {
-  background-color: #7794ff;
-  padding: 10px 15px;
-  border-radius: 80px;
-  color: white !important;
-  transition: all 0.5s;
-}
-.contact-buttom:hover {
-  background-color: #93aafc;
-}
-.contact-buttom .fa-envelope {
-  margin-right: 10px;
 }
 
 #biography {
@@ -407,17 +401,13 @@ footer .footer-contact .fa-linkedin {
   tablets and large phones min with 768px
  */
 @media all and (max-width: 1100px) {
-  * p,
-span,
-h3 {
-    font-size: 30px;
+  body {
+    margin: 0;
   }
   .navigation-bar {
-    margin: 20px;
     justify-content: center;
   }
   .navigation-bar .navigation-bar-links {
-    margin: 20px;
     justify-content: center;
   }
   .navigation-bar .navigation-bar-links ul {
@@ -426,14 +416,20 @@ h3 {
   }
   .navigation-bar .navigation-bar-links ul li a {
     font-size: 25px;
-    margin: 20px;
+    margin: 15px;
     display: inline-block;
+  }
+  .navigation-bar .navigation-bar-links ul li .contact-buttom {
+    padding: 10px;
+    font-size: 19px;
+    margin: 0px;
   }
   #biography {
     flex-direction: column;
     align-content: center;
-    margin: 100px;
+    justify-content: center;
     text-align: center;
+    margin: 0;
   }
   #biography .biography-intro-text {
     width: 100%;
@@ -442,7 +438,7 @@ h3 {
     margin: 0 auto;
   }
   #biography .biography-intro-text h1 {
-    margin: 20px 0;
+    font-size: 50px;
   }
   #biography .biography-intro-text .dowloand-cv {
     margin: 0 auto;
@@ -456,7 +452,7 @@ h3 {
     margin-top: 50px;
   }
   #biography .biography-banner img {
-    width: 500px;
+    width: 100%;
   }
   #skills {
     flex-direction: column;
@@ -465,32 +461,28 @@ h3 {
     width: 100%;
     margin: 0;
     text-align: center;
-    padding: 10px;
-  }
-  #skills .skills-subtitle h2 {
-    justify-content: center;
   }
   #skills .skills-items {
     width: 100%;
     padding: 0;
+    justify-content: space-around;
   }
-  #skills .skills-items .tem {
-    width: 155px;
-    text-align: center;
+  #skills .skills-items .item {
+    margin: 20px;
   }
-  #skills .skills-items .tem img {
+  #skills .skills-items .item img {
     margin: 0;
   }
   #my-projects {
-    margin: 100px 0px;
     flex-direction: column;
+    margin: 0;
   }
   #my-projects .projects-wrapper {
     flex-direction: column;
   }
   #my-projects .projects-wrapper .project {
     width: 100%;
-    margin: 50px 0px;
+    margin: 0;
   }
   #my-projects .projects-wrapper .project .project-thumbnail img {
     width: 100%;
@@ -499,12 +491,11 @@ h3 {
     text-align: center;
   }
   #my-projects .projects-wrapper .project .project-buttons a {
-    font-size: 25px;
-    padding: 25px 35px;
+    font-size: 20px;
     border-radius: 40px;
   }
   #experience {
-    margin: 100px 20px;
+    margin: 0;
   }
   #experience .experience-subtitle h2 {
     margin: 30px auto;
@@ -512,7 +503,21 @@ h3 {
   #experience .experience-item {
     width: 100%;
   }
+  #experience .experience-company-logo img {
+    width: 50px;
+  }
+  #experience .experience-company-info {
+    margin-left: 10px;
+  }
 }
+#certificate .certificate-wrap {
+  flex-direction: column;
+}
+#certificate .certificate-wrap .certificate-item {
+  margin: 0;
+  padding: 0;
+}
+
 .footer-contact {
   flex-wrap: wrap;
 }/*# sourceMappingURL=main.css.map */
