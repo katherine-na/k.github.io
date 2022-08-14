@@ -295,13 +295,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-right: 30px;
+  margin-right: 20px;
 }
 #education .education-coursera .education-info h3,
 #education .education-colbach .education-info h3 {
   margin: 0 0 15px 0;
   color: #0d1d56;
   font-size: 25px;
+  text-align: end;
 }
 #education .education-coursera .education-info span,
 #education .education-coursera .education-info p,
@@ -455,6 +456,8 @@ footer .footer-contact .fa-linkedin {
   }
   #skills {
     flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
   #skills .skills-subtitle {
     width: 100%;
@@ -475,13 +478,15 @@ footer .footer-contact .fa-linkedin {
   #my-projects {
     flex-direction: column;
     margin: 0;
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
   #my-projects .projects-wrapper {
     flex-direction: column;
   }
   #my-projects .projects-wrapper .project {
     width: 100%;
-    margin: 0;
+    margin-block: 30px;
     padding: 0;
   }
   #my-projects .projects-wrapper .project .project-thumbnail img {
@@ -496,6 +501,8 @@ footer .footer-contact .fa-linkedin {
   }
   #experience {
     margin: 0;
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
   #experience .experience-subtitle h2 {
     margin: 30px auto;
@@ -509,11 +516,19 @@ footer .footer-contact .fa-linkedin {
   #experience .experience-company-info {
     margin-left: 10px;
   }
+  #education {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
   #education .education-items {
     margin: 0;
   }
   #education .education-items .education-coursera {
     margin-bottom: 40px;
+  }
+  #certificate {
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
   #certificate .certificate-wrap {
     flex-direction: column;
