@@ -24,6 +24,11 @@ $greenColor: rgb(49 181 182);
   border-bottom-width: 5px;
 }
 
+@mixin marginResponsive {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
 body {
   font-family: sans-serif;
 }
@@ -330,11 +335,12 @@ body {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      margin-right: 30px;
+      margin-right: 20px;
       h3 {
         margin: 0 0 15px 0;
         color: $capitalColor;
         font-size: 25px;
+        text-align: end;
       }
       span,
       p {
@@ -496,6 +502,7 @@ footer {
 
   #skills {
     flex-direction: column;
+    @include marginResponsive;
     .skills-subtitle {
       width: 100%;
       margin: 0;
@@ -517,11 +524,13 @@ footer {
   #my-projects {
     flex-direction: column;
     margin: 0;
+    @include marginResponsive;
+
     .projects-wrapper {
       flex-direction: column;
       .project {
         width: 100%;
-        margin: 0;
+        margin-block: 30px;
         padding: 0;
         .project-thumbnail {
           img {
@@ -543,6 +552,8 @@ footer {
 
   #experience {
     margin: 0;
+    @include marginResponsive;
+
     .experience-subtitle {
       h2 {
         margin: 30px auto;
@@ -562,6 +573,8 @@ footer {
   }
 
   #education {
+    @include marginResponsive;
+
     .education-items {
       margin: 0;
       .education-coursera {
@@ -571,6 +584,8 @@ footer {
   }
 
   #certificate {
+    @include marginResponsive;
+
     .certificate-wrap {
       flex-direction: column;
 
