@@ -416,12 +416,12 @@ footer .footer-contact .fa-linkedin {
   }
   .navigation-bar .navigation-bar-links ul li a {
     font-size: 25px;
-    margin: 15px;
+    margin: 10px;
     display: inline-block;
   }
   .navigation-bar .navigation-bar-links ul li .contact-buttom {
     padding: 10px;
-    font-size: 19px;
+    font-size: 18px;
     margin: 0px;
   }
   #biography {
@@ -439,12 +439,13 @@ footer .footer-contact .fa-linkedin {
   }
   #biography .biography-intro-text h1 {
     font-size: 50px;
+    margin-block: 10px;
   }
   #biography .biography-intro-text .dowloand-cv {
     margin: 0 auto;
     margin-top: 20px;
     font-size: 25px;
-    padding: 18px;
+    padding: 10px;
     color: black;
   }
   #biography .biography-banner {
@@ -456,13 +457,17 @@ footer .footer-contact .fa-linkedin {
   }
   #skills {
     flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    align-items: center;
   }
   #skills .skills-subtitle {
     width: 100%;
     margin: 0;
     text-align: center;
+  }
+  #skills .skills-subtitle h2 {
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
   }
   #skills .skills-items {
     width: 100%;
@@ -478,7 +483,7 @@ footer .footer-contact .fa-linkedin {
   #my-projects {
     flex-direction: column;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 30px;
   }
   #my-projects .projects-wrapper {
@@ -501,7 +506,7 @@ footer .footer-contact .fa-linkedin {
   }
   #experience {
     margin: 0;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 30px;
   }
   #experience .experience-subtitle h2 {
@@ -516,18 +521,35 @@ footer .footer-contact .fa-linkedin {
   #experience .experience-company-info {
     margin-left: 10px;
   }
-  #education {
-    margin-top: 50px;
-    margin-bottom: 30px;
-  }
   #education .education-items {
+    align-items: center;
     margin: 0;
   }
-  #education .education-items .education-coursera {
+  #education .education-items .education-subtitle h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  #education .education-items .education-coursera,
+#education .education-items .education-colbach {
     margin-bottom: 40px;
+    flex-direction: row-reverse;
+  }
+  #education .education-items .education-coursera .education-info,
+#education .education-items .education-colbach .education-info {
+    margin: 0;
+    margin-left: 15px;
+    align-items: flex-start;
+  }
+  #education .education-items .education-coursera .education-info h3,
+#education .education-items .education-coursera .education-info span,
+#education .education-items .education-coursera .education-info p,
+#education .education-items .education-colbach .education-info h3,
+#education .education-items .education-colbach .education-info span,
+#education .education-items .education-colbach .education-info p {
+    text-align: start;
   }
   #certificate {
-    margin-top: 50px;
+    margin-top: 60px;
     margin-bottom: 30px;
   }
   #certificate .certificate-wrap {
