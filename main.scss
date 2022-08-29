@@ -260,9 +260,14 @@ body {
 
 // experience
 #experience {
-  margin: 120px;
+  // margin: 120px;
+  padding: 30px 0px;
   margin-bottom: 0;
+  background-image: linear-gradient(260deg, #effbeb 0%, #c9f6d7 100%);
+
   .experience-subtitle {
+    margin-left: 120px;
+
     h2 {
       @include subtitleSection;
       width: 247px;
@@ -271,6 +276,8 @@ body {
   .experience-item {
     display: flex;
     width: 50%;
+    margin-top: 30px;
+    margin-left: 120px;
   }
   .experience-company-logo {
     img {
@@ -331,6 +338,7 @@ body {
   .education-coursera,
   .education-colbach {
     display: flex;
+    margin-top: 30px;
     .education-info {
       display: flex;
       flex-direction: column;
