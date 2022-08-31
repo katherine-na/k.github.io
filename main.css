@@ -190,7 +190,6 @@ body {
   align-items: center;
   width: 25.33%;
   padding: 10px;
-  margin-right: 20px;
 }
 #my-projects .projects-wrapper .project:hover {
   -webkit-animation: bounce 1s;
